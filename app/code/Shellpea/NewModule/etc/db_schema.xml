@@ -1,0 +1,15 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="Shellpea_Table">
+        <column xsi:type="int" name="id_column" padding="10" unsigned="false" nullable="false" identity="true" comment="Entity Id"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="varchar" name="email" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="varchar" name="message_text" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="varchar" name="assigned_admin" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="varchar" name="create_at" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="varchar" name="update_at" nullable="false" length="255" comment="Title"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id_column"/>
+        </constraint>
+    </table>
+</schema>
