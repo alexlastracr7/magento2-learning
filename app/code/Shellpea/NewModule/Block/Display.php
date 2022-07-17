@@ -28,7 +28,7 @@ class Display extends \Magento\Framework\View\Element\Template
 
     public function getFormAction()
     {
-        return $this->getUrl('contact/index/post', ['_secure' => true]);
+        return $this->getUrl('test/page/save', ['_secure' => true]);
     }
 
 }

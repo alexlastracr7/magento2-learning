@@ -14,4 +14,5 @@ class Post extends \Magento\Framework\Model\AbstractModel implements \Magento\Fr
     {
         return ['Shellpea_Table' . '_' . $this->getId()];
     }
+
 }

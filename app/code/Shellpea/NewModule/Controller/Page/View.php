@@ -31,7 +31,7 @@ class View implements HttpGetActionInterface
 
     public function execute()
     {
-        var_dump($this->request->getParams());
+
         return $this->_pageFactory->create();
     }
 

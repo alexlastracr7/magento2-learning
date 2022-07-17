@@ -10,12 +10,12 @@ echo "";
 
 <form action="<?php echo $block->getFormAction();?>  method="post">
 
-    <label for="fname">Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Email:</label><br>
-    <input type="email" id="lname" name="lname" placeholder="exmple@example">
-    <label for="lname">What’s on your mind?</label><br>
-    <textarea placeholder=" "></textarea>
+    <label for="name">Name:</label><br>
+    <input type="text" id="fname" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="lname" name="email" placeholder="exmple@example">
+    <label for="message_text">What’s on your mind?</label><br>
+    <textarea name="message_text" placeholder=" "></textarea>
     <?= $escaper->escapeHtml($block->getStorePhoneNumber()) ?>
     <br>
     <button type="submit" class="action submit primary" title="Save"><span><?= $block->escapeHtmlAttr(__('Save')) ?></span></button>
