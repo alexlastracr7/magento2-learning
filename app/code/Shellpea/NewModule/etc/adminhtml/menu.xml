@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Shellpea_NewModule::Custumers" title="Customers" module="Shellpea_NewModule" sortOrder="51" resource="Shellpea_NewModule::Custumers"/>
+        <add id="Shellpea_NewModule::Collected_Data" title="Collected Data" module="Shellpea_NewModule" sortOrder="1" action="Shellpea_NewModule/Post/Index" resource="Shellpea_NewModule::Collected_Data" parent="Shellpea_NewModule::Custumers"/>
+    </menu>
+</config>
