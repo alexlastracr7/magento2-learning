@@ -9,7 +9,7 @@
         <column xsi:type="varchar" name="create_at" nullable="false" length="255" comment="Title"/>
         <column xsi:type="varchar" name="update_at" nullable="false" length="255" comment="Title"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
-            <column name="id_column"/>
+            <column name=""/>
         </constraint>
     </table>
 </schema>
