@@ -20,8 +20,8 @@ class SalesOrderGrid
 
             $subject->getSelect()->joinLeft(
                 $tableName,
-                $tableName . '.order_id = main_table.' . $primaryKey,
-                $tableName . '.udated_at'
+                $tableName . '.entity_id = main_table.' . $primaryKey,
+                $tableName . '.updated_at'
             );
         }
 
