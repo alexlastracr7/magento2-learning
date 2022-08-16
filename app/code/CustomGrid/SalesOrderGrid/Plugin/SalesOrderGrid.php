@@ -25,6 +25,17 @@ class SalesOrderGrid
             );
         }
 
+        if (!$subject->isLoaded()) {
+            $primaryKey = $subject->getResource()->getIdFieldName();
+            $tableName = $subject->getResource()->getTable('customer_entity');
+
+            $subject->getSelect()->joinLeft(
+                $tableName,
+                $tableName . '.entity_id = main_table.' . $primaryKey,
+                $tableName . '.created_at'
+            );
+        }
+
         return null;
     }
 }
